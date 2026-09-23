@@ -6,8 +6,8 @@ namespace CRUDProductos.BA
 {
     public class Producto
     {
-        public string Codigo { get; set; }
-        public string Nombre { get; set; }
+        public string Codigo { get; set; } = string.Empty;
+        public string Nombre { get; set; } = string.Empty;
         public int Cantidad { get; set; }
         public decimal Precio { get; set; }
 

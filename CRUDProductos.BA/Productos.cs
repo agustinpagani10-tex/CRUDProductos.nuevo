@@ -21,11 +21,13 @@ namespace CRUDProductos.BA
         public string Listar()
         {
             string listado = "";
-            for (int i = 0; i <= UltimoRegistroCargado; i++)
+            foreach (Producto producto in Lista)
             {
-                listado = listado + Lista[i].Renglon() + "\n";
+                if (producto != null)
+                {
+                    listado = listado + producto.Codigo + "-" + producto.Nombre + "\n";
+                }
             }
-
             return listado;
         }
     }

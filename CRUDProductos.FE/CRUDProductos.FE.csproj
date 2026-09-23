@@ -8,6 +8,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <!-- Removed invalid Compile include for CRUDProductos.cs.ok which caused duplicate symbols -->
+
   <ItemGroup>
     <ProjectReference Include="..\CRUDProductos.BA\CRUDProductos.BA.csproj" />
   </ItemGroup>
